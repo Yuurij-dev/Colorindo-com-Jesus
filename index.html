@@ -9,26 +9,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Colorindo com Jesus</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="assets/banner.jpg" alt="banner_crianca">
+    <header class="!p-7">
+        <img class="rounded-xl" src="assets/banner2.jpg" alt="banner_crianca">
     </header>
 
-    <main>
-        <div>
-            <h1 class="">35 Livros de Colorir Critões para Crianças</h1>
-            <p>Diversão e fé unidas em desenhos para colorir. Estimule a criatividade dos pequenos enquanto aprende histórias biblicas.</p>
-        </div>
-
-        <div>
-            <div>
-
+    <main class="!p-5">
+        <div class=" text-center flex flex-col gap-5">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-3xl font-black text-[#005a76]">35 Livros de Colorir Critões para Crianças</h1>
+                <p class="text-zinc-400 text-[1.1rem]">Diversão e fé unidas em desenhos para colorir. Estimule a criatividade dos pequenos enquanto aprende histórias biblicas.</p>
             </div>
+
+            <ul class="flex gap-8 justify-center ">
+                
+                <li>
+                    <div class="flex flex-col items-center gap-2">
+                        <img class="w-15 h-15 rounded-full" src="assets/igreja.jpg" alt="">
+                        <p class="text-[#005a76] font-semibold text-[0.9rem]">Para Igrejas ou Células</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="flex flex-col items-center gap-2">
+                        <img class="w-15 h-15 rounded-full" src="assets/casa.jpg" alt="">
+                        <p class="text-[#005a76] font-semibold text-[0.9rem]">Para Escola ou Casa</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="flex flex-col items-center gap-2">
+                        <img class="w-15 h-15 rounded-full" src="assets/coracao.jpg" alt="">
+                        <p class="text-[#005a76] font-semibold text-[0.9rem]">Valores Cristãos</p>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="#ofertas" class="pulse !p-2 bg-[#f95e28] text-white text-2xl font-bold rounded-[2rem]">QUERO VER AS OFERTAS</a>
         </div>
     </main>
+
+    <section class="!p-5 flex gap-2 bg-white">
+        <div class="flex items-start gap-3">
+            <div class="!p-2 bg-orange-50 rounded-md">
+                <i class="fa-solid fa-book text-[#f95e28]"></i>
+            </div>
+            <p class="text-[#005a76] font-bold text-[0.8rem]">35 livros com temas cristãos</p>
+        </div>
+
+        <div class="flex items-start gap-3">
+            <div class="!p-2 bg-green-50 rounded-md">
+                <i class="fa-solid fa-pencil text-[#70be63]"></i>
+            </div>
+            <p class="text-[#005a76] text-[0.8rem]"><span class="font-bold">Desenhos grandes</span> e fácies de colorir</p>
+        </div>
+    </section>
 </body>
 </html>
