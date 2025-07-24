@@ -1,125 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Colorindo com Jesus</title>
+    <link rel="shortcut icon" href="public/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+    <!-- TailWind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- TailwindCSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Awsome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="/styles.css">
 
-  <!-- CSS personalizado -->
-  <link rel="stylesheet" href="/styles.css" />
+    <title>Colorindo com Jesus</title>
+
 </head>
-<body class="bg-white text-gray-800 font-['Roboto']">
+<body>
+    <header class="!p-7">
+        <img class="rounded-xl" src="/assets/banner2.jpg" alt="banner_crianca">
+    </header>
 
-  <header class="p-7">
-    <img class="rounded-xl w-full" src="/assets/banner2.jpg" alt="Banner com crianças" />
-  </header>
+    <main class="!p-5">
+        <div class=" text-center flex flex-col gap-5">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-3xl font-black text-[#005a76]">35 Livros de Colorir Critões para Crianças</h1>
+                <p class="text-zinc-400 text-[1.1rem]">Diversão e fé unidas em desenhos para colorir. Estimule a criatividade dos pequenos enquanto aprende histórias biblicas.</p>
+            </div>
 
-  <main class="p-5">
-    <div class="text-center flex flex-col gap-5">
-      <div class="flex flex-col gap-3">
-        <h1 class="text-3xl font-black text-[#005a76]">35 Livros de Colorir Cristãos para Crianças</h1>
-        <p class="text-zinc-500 text-[1.1rem]">
-          Diversão e fé unidas em desenhos para colorir. Estimule a criatividade dos pequenos enquanto aprendem histórias bíblicas.
-        </p>
-      </div>
+            <ul class="flex gap-8 justify-center ">
+                
+                <li>
+                    <div class="flex flex-col items-center gap-2">
+                        <img class="w-15 h-15 rounded-full" src="/assets/igreja.jpg" alt="">
+                        <p class="text-[#005a76] font-semibold text-[0.9rem]">Para Igrejas ou Células</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="flex flex-col items-center gap-2">
+                        <img class="w-15 h-15 rounded-full" src="/assets/casa.jpg" alt="">
+                        <p class="text-[#005a76] font-semibold text-[0.9rem]">Para Escola ou Casa</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="flex flex-col items-center gap-2">
+                        <img class="w-15 h-15 rounded-full" src="/assets/coracao.jpg" alt="">
+                        <p class="text-[#005a76] font-semibold text-[0.9rem]">Valores Cristãos</p>
+                    </div>
+                </li>
+            </ul>
 
-      <ul class="flex flex-wrap gap-8 justify-center">
-        <li>
-          <div class="flex flex-col items-center gap-2">
-            <img class="w-16 h-16 rounded-full" src="/assets/igreja.jpg" alt="Igreja" />
-            <p class="text-[#005a76] font-semibold text-sm">Para Igrejas ou Células</p>
-          </div>
-        </li>
-        <li>
-          <div class="flex flex-col items-center gap-2">
-            <img class="w-16 h-16 rounded-full" src="/assets/casa.jpg" alt="Casa" />
-            <p class="text-[#005a76] font-semibold text-sm">Para Escola ou Casa</p>
-          </div>
-        </li>
-        <li>
-          <div class="flex flex-col items-center gap-2">
-            <img class="w-16 h-16 rounded-full" src="/assets/coracao.jpg" alt="Coração" />
-            <p class="text-[#005a76] font-semibold text-sm">Valores Cristãos</p>
-          </div>
-        </li>
-      </ul>
+            <a href="#ofertas" class="pulse !p-2 bg-[#f95e28] text-white text-2xl font-bold rounded-[2rem]">QUERO VER AS OFERTAS</a>
+        </div>
+    </main>
 
-      <a href="#ofertas" class="p-2 px-6 bg-[#f95e28] text-white text-2xl font-bold rounded-full hover:opacity-90 transition">
-        QUERO VER AS OFERTAS
-      </a>
-    </div>
-  </main>
+    <section class="!p-5 flex gap-2 bg-white">
+        <div class="flex items-start gap-3">
+            <div class="!p-2 bg-orange-50 rounded-md">
+                <i class="fa-solid fa-book text-[#f95e28]"></i>
+            </div>
+            <p class="text-[#005a76] font-bold text-[0.8rem]">35 livros com temas cristãos</p>
+        </div>
 
-  <section class="p-5 flex flex-wrap gap-5 justify-center bg-white">
-    <div class="flex items-start gap-3 max-w-xs">
-      <div class="p-2 bg-orange-100 rounded-md">
-        <i class="fa-solid fa-book text-[#f95e28]"></i>
-      </div>
-      <p class="text-[#005a76] font-bold text-sm">35 livros com temas cristãos</p>
-    </div>
+        <div class="flex items-start gap-3">
+            <div class="!p-2 bg-green-50 rounded-md">
+                <i class="fa-solid fa-pencil text-[#70be63]"></i>
+            </div>
+            <p class="text-[#005a76] text-[0.8rem]"><span class="font-bold">Desenhos grandes</span> e fácies de colorir</p>
+        </div>
+    </section>
 
-    <div class="flex items-start gap-3 max-w-xs">
-      <div class="p-2 bg-green-100 rounded-md">
-        <i class="fa-solid fa-pencil text-[#70be63]"></i>
-      </div>
-      <p class="text-[#005a76] text-sm"><span class="font-bold">Desenhos grandes</span> e fáceis de colorir</p>
-    </div>
-  </section>
+    <section class="!p-5 bg-white grid grid-cols-1 gap-5">
+        <div class="shadow !p-3 flex flex-col gap-2 text-center items-center text-white rounded-xl">
+            <div class="w-15 h-15 bg-[#39ccec] flex items-center justify-center rounded-full">
+                <i class="text-2xl fa-solid fa-children"></i>
+            </div>
+            <h1 class="text-[#005a76] font-extrabold text-[1.3rem]">Células e Grupos</h1>
+            <p class="text-[#005a76]">Atividades interativas que mantêm as crianças atentas e engajadas durante toda a reunião, transformando aprendizado em diversão.</p>
+        </div>
 
-  <section class="p-5 bg-white grid grid-cols-1 md:grid-cols-2 gap-5">
-    <div class="shadow-md p-4 flex flex-col gap-3 items-center text-center rounded-xl">
-      <div class="w-16 h-16 bg-[#39ccec] flex items-center justify-center rounded-full">
-        <i class="text-2xl text-white fa-solid fa-children"></i>
-      </div>
-      <h2 class="text-[#005a76] font-extrabold text-xl">Células e Grupos</h2>
-      <p class="text-[#005a76] text-sm">
-        Atividades interativas que mantêm as crianças atentas e engajadas durante toda a reunião, transformando aprendizado em diversão.
-      </p>
-    </div>
+        <div class="shadow !p-3 flex flex-col text-center items-center gap-2 text-white rounded-xl">
+            <div class="w-15 h-15 bg-[#39ccec] flex items-center justify-center rounded-full">
+                <i class="text-2xl fa-solid fa-church"></i>
+            </div>
+            <h1 class="text-[#005a76] font-extrabold text-[1.3rem]">Escola Dominical</h1>
+            <p class="text-[#005a76]">Ferramentas de apoio que tornam cada aula mais interativa e envolvente.</p>
+        </div>
 
-    <div class="shadow-md p-4 flex flex-col gap-3 items-center text-center rounded-xl">
-      <div class="w-16 h-16 bg-[#39ccec] flex items-center justify-center rounded-full">
-        <i class="text-2xl text-white fa-solid fa-church"></i>
-      </div>
-      <h2 class="text-[#005a76] font-extrabold text-xl">Escola Dominical</h2>
-      <p class="text-[#005a76] text-sm">
-        Ferramentas de apoio que tornam cada aula mais interativa e envolvente.
-      </p>
-    </div>
+        <div class="shadow !p-3 flex flex-col text-center items-center gap-2 text-white rounded-xl">
+            <div class="w-15 h-15 bg-[#39ccec] flex items-center justify-center rounded-full">
+                <i class="text-2xl fa-solid fa-heart"></i>
+            </div>
+            <h1 class="text-[#005a76] font-extrabold text-[1.3rem]">Devocional Familiar</h1>
+            <p class="text-[#005a76]">Momentos especias de conexão com Deus em família.</p>
+        </div>
 
-    <div class="shadow-md p-4 flex flex-col gap-3 items-center text-center rounded-xl">
-      <div class="w-16 h-16 bg-[#39ccec] flex items-center justify-center rounded-full">
-        <i class="text-2xl text-white fa-solid fa-heart"></i>
-      </div>
-      <h2 class="text-[#005a76] font-extrabold text-xl">Devocional Familiar</h2>
-      <p class="text-[#005a76] text-sm">
-        Momentos especiais de conexão com Deus em família.
-      </p>
-    </div>
-
-    <div class="shadow-md p-4 flex flex-col gap-3 items-center text-center rounded-xl">
-      <div class="w-16 h-16 bg-[#39ccec] flex items-center justify-center rounded-full">
-        <i class="text-2xl text-white fa-solid fa-book"></i>
-      </div>
-      <h2 class="text-[#005a76] font-extrabold text-xl">Uso Pedagógico</h2>
-      <p class="text-[#005a76] text-sm">
-        Ferramentas educativas que estimulam a coordenação motora e despertam a criatividade das crianças.
-      </p>
-    </div>
-  </section>
+        <div class="shadow !p-3 flex flex-col text-center items-center gap-2 text-white rounded-xl">
+            <div class="w-15 h-15 bg-[#39ccec] flex items-center justify-center rounded-full">
+                <i class="text-2xl fa-solid fa-book"></i>
+            </div>
+            <h1 class="text-[#005a76] font-extrabold text-[1.3rem]">Uso Pedagógico</h1>
+            <p class="text-[#005a76]">Ferramentas educativas que estimulam a coordenação motora e despertam a criatividade das crianças.</p>
+        </div>
+    </section>
 </body>
 </html>
