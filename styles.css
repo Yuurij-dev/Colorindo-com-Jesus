@@ -3,12 +3,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+
 }
 
 body{
-    width: 100%;
+  scroll-behavior: smooth;
+  width: 100%;
 
-    background-color: #fefeec;
+  background-color: #fefeec;
 }
 
 header{

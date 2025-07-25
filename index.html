@@ -180,7 +180,7 @@
 
             <div class="grid grid-cols-1 gap-5">
                 
-                <div class="!p-5 bg-white rounded-xl flex flex-col items-center gap-3">
+                <div class="!p-5 shadow bg-white rounded-xl flex flex-col items-center gap-3">
                     <div class="w-16 h-16 ">
                         <img class="rounded-full" src="/assets/Persons/person1.jfif" alt="">
                     </div>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
 
-                <div class="!p-5 bg-white rounded-xl flex flex-col items-center gap-3">
+                <div class="!p-5 shadow bg-white rounded-xl flex flex-col items-center gap-3">
                     <div class="w-16 h-16 ">
                         <img class="rounded-full" src="/assets/Persons/person3.jfif" alt="">
                     </div>
@@ -216,7 +216,7 @@
                     </div>
                 </div>
 
-                <div class="!p-5 bg-white rounded-xl flex flex-col items-center gap-3">
+                <div class="!p-5 shadow bg-white rounded-xl flex flex-col items-center gap-3">
                     <div class="w-16 h-16 ">
                         <img class="rounded-full" src="/assets/Persons/person2.jfif" alt="">
                     </div>
@@ -239,7 +239,7 @@
         <a href="#ofertas" class="!p-2 cursor-pointer bg-red-400 text-white text-[1.2rem] font-bold rounded-[2rem] text-center"><i class="fa-solid fa-clock"></i> OFERTA LIMITADA</a>
     </section>
 
-    <section class="!p-5 bg-white">
+    <section id="ofertas" class="!p-5 bg-white">
         <div class="!mb-3 text-center flex flex-col gap-3">
             <h1 class="text-2xl text-[#005a76] font-black">Escolha Sua Oferta Especial</h1>
             <p class="text-[#005a76]">Livros de alto padrão que tornam seus momentos de fé ainda mais especiais.</p>
@@ -267,7 +267,7 @@
                     </ul>
 
                 </div>
-                <a href="#ofertas" class="pulse w-full cursor-pointer !p-2 bg-green-400 text-white text-[1.2rem] font-bold rounded-[2rem] text-center"><i class="fa-solid fa-clock"></i>QUERO O PLANO BÁSICO</a>
+                <a target="_blank" href="https://colorindo-com-jesus2.pay.yampi.com.br/r/ATC9SB38J3" class="pulse w-full cursor-pointer !p-2 bg-green-400 text-white text-[1.2rem] font-bold rounded-[2rem] text-center"><i class="fa-solid fa-clock"></i>QUERO O PLANO BÁSICO</a>
             </div>
 
             <div class="!p-5 shadow flex flex-col items-center gap-3 text-center bg-white rounded-xl border-3 border-yellow-400">
@@ -310,11 +310,70 @@
         </div>
     </section>
 
-    <section>
+    <section class="!p-5 flex flex-col">
         <div class="!my-3 text-center flex flex-col gap-3">
             <h1 class="text-2xl text-[#005a76] font-black">Perguntas Frequentes</h1>
         </div>
+
+        <div class="max-w-md mx-auto bg-blue-400 rounded-xl shadow !mb-4">
+            <button onclick="toggleAnswer('resposta1')" class="!p-4 w-full flex justify-between items-center text-left font-semibold text-white">
+                <span class="font-bold">Como recebo os livros?</span>
+                <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="resposta1" class="!p-4 !mt-2 bg-white text-gray-600 hidden">
+                <span>Após a confirmação do pagamento, você receberá um email com o link para download dos 35 livros em formato PDF. O acesso é imediato e vitalício.</span>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto bg-blue-400 rounded-xl shadow !mb-4">
+            <button onclick="toggleAnswer('resposta2')" class="!p-4 w-full flex justify-between items-center text-left font-semibold text-white">
+                <span class="font-bold">Posso imprimir quantas vezes quiser?</span>
+                <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="resposta2" class="!p-4 !mt-2 bg-white text-gray-600 hidden">
+                <span>Sim! Com o acesso vitalício, você pode imprimir quantas cópias precisar para uso pessoal, famíliar ou em atividades da igreja.</span>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto bg-blue-400 rounded-xl shadow !mb-4">
+            <button onclick="toggleAnswer('resposta3')" class="!p-4 w-full flex justify-between items-center text-left font-semibold text-white">
+                <span class="font-bold">Qual a faixa etária recomendada?</span>
+                <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="resposta3" class="!p-4 !mt-2 bg-white text-gray-600 hidden">
+                <span>Os livros são adequados para crianças de 3 a 12 anos, com diferentes níveis de complexidade para cada faixa etária.</span>
+            </div>
+        </div>
+        <a href="#ofertas" class="!p-2 w-full cursor-pointer bg-[#f95e28] text-white text-[0.9rem] font-bold rounded-[2rem] text-center">TIREI MINHAS DÚVIDAS, QUERO COMPRAR!</a>
     </section>
+
+    <section class="!p-5 bg-white">
+        <div class="!p-5 shadow bg-white rounded-xl flex flex-col items-center gap-3 text-center">
+            <div class="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center">
+                <i class="text-2xl text-white fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="text-[#005a76] font-extrabold text-[1.3rem]">Garantia de 7 dias</h3>
+                <p class="text-[#005a76]">Se não ficar satisfeito, devolvemos seu dinheiro sem perguntas.</p>
+            </div>
+        </div>
+
+        <ul class="!my-6 flex flex-col items-center gap-3 text-[#005a76]">
+            <li><i class="text-green-400 text-[1.3rem] fa-solid fa-lock"></i> Pagamento Seguro</li>
+            <li><i class="text-green-400 text-[1.3rem] fa-brands fa-expeditedssl"></i> SSL Protegido</li>
+        </ul>
+    </section>
+
+    <footer class="!p-5 bg-white flex flex-col items-center">
+        <span class="text-[#005a76]"><i class="fas fa-copyright"></i> 2025 Colorindo com Jesus.</span>
+        <span class="text-[#005a76]">Todos os direitos reservados.</span>
+    </footer>
     <script src="/script.js"></script>
 </body>
 </html>
