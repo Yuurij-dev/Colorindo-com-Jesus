@@ -43,9 +43,9 @@ header img{
 
 /* Shadow card */
 .shadow{
-box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.75);
--webkit-box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.75);
--moz-box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.75);
+box-shadow: 0px 0px 9px 1px rgba(207,207,207,0.46);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(207,207,207,0.46);
+-moz-box-shadow: 0px 0px 9px 1px rgba(207,207,207,0.46);
 }
 
 /* Slide */
